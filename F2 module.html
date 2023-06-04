@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="restaurant-name">
+    <h1>The Tasty Bites Restaurant</h1>
+    <p>The best restaurant in town</p>
+  </div>
+
+  <header>
+    <button class="cart-btn">Cart</button>
+    <button class="track-order-btn">Track Order</button>
+  </header>
+  
+  <div class="menu-container">
+    <!-- Menu items will be dynamically added here -->
+    <div class="menu-item">
+        <img src="./img/classic.jpeg" alt="Food 1">
+        <h2>Classic Burger</h2>
+        <p>A mouth-watering classic burger with all the fixings.</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="./img/chees.jpeg" alt="Food 2">
+        <h2>Cheeseburger</h2>
+        <p>A delicious cheeseburger topped with melted cheddar.</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="./img/veg.jpeg" alt="Food 3">
+        <h2>Veggie Burger</h2>
+        <p>A flavorful veggie patty served with fresh vegetables.</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+  </div>
+  
+  <div class="order-status">
+    <h2>Order Status: <span id="status">-</span></h2>
+    <h2>Payment Status: <span id="payment">-</span></h2>
+  </div>
+  
+  <div class="sidebar">
+    <button class="close-btn">Close</button>
+    <h2>Cart</h2>
+    <ul class="cart-items">
+    </ul>
+    <button id="checkout-btn">Checkout</button>
+  </div>
+  
+  <div class="overlay"></div>
+  
+  <footer class="footer">
+    <p>Visit us at: 123 Main Street, City, State, ZIP</p>
+    <p>Opening Hours: Monday - Friday: 10am - 9pm, Saturday - Sunday: 9am - 10pm</p>
+    <p>Contact Information: Phone: 123-456-7890, Email: info@tastybites.com</p>
+  </footer>
+  
+  <script src="./Scrept.js"></script>
+</body>
+</html>

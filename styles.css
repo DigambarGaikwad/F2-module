@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: lightblue;
+    color: #333;
+  }
+  
+  .restaurant-name {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .restaurant-name h1 {
+    margin: 0;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: right;
+  }
+  
+  header button {
+    margin: 0 10px;
+    background-color: greenyellow;
+    border-radius: 5px;
+  }
+  
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .menu-item {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .menu-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .order-status {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .open {
+    transform: translateX(0);
+  }
+  
+  .overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .cart-items {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .checkout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .add-to-cart-btn {
+    background-color: green;
+    border-radius: 5px;
+  }
+  
